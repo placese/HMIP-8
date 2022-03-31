@@ -2,9 +2,6 @@ import pika
 import os
 from pika.exchange_type import ExchangeType
  
-url = 'amqps://ijceahck:kpl906ISe1_aW0mHoJJkJFNKqpchLdRy@sparrow.rmq.cloudamqp.com/ijceahck'
-password = 'hLUU6AI0OuWizdYd7GaCpooSI_lLJeAj'
-
 url = os.environ.get('CLOUDAMQP_URL', 'amqps://ijceahck:hLUU6AI0OuWizdYd7GaCpooSI_lLJeAj@sparrow.rmq.cloudamqp.com/ijceahck')
 
 params = pika.URLParameters(url)
